@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("/assets/images/background-desktop.png");
+    background-image: url("../../images/background-desktop.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ justify-content: center;
 }
 .confirm_ticket{
     padding: 20px 30px;
-    background: url(/assets/images/pattern-ticket.svg);
+    background: url(../../images/pattern-ticket.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right  bottom ;
