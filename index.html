@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- cdn bootstap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- cdn icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- link css -->
+   <link rel="stylesheet" href="assets/style/script/styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="container titles">
+    <div class="row">
+      <div class="col-12">
+        <div class="title text-center">
+          <div class="entete mb-2">
+            <img src="assets/images/logo-full.svg" alt="">
+            <span>Coding conf</span>
+          </div>
+          <h1 class="display-4 fw-bold"> Your Journey to Coding Conf 2025 Starts Here!</h1>
+          <p>Secure your spot at next year's biggest coding conference.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- form -->
+   <div class="container formulaires">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-10 p-2">
+        <form action="" id="myForm">
+          <div class="mb-3">
+            <p>Upload an image</p>
+            <label for="upload" class="form-label" id="upload-label">
+              <img src="assets/images/icon-upload.svg" alt="" id="profile" max-width="500px">
+              <span>click to upload</span>
+            </label>
+            <input type="file" name="image" id="upload" accept="image/*" class="form-control">
+            
+            <p class="infos-image mt-2"><i class="bi bi-info-circle-fill"></i> upload your photo (jpeg or PNG, max size: 5MB)</p>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" name="image" id="name"  class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" name="email" id="email"  class="form-control">
+            <span id="error"></span>
+          </div>
+          <div class="mb-3">
+            <label for="username" class="form-label">Github Username</label>
+            <input type="text" name="username" id="username"  class="form-control">
+          </div>
+          <button type="submit" class="text-center btn generate">Generate My Ticket</button>
+        </form>
+      </div>
+    </div>
+   </div>
+
+   <!-- ticket -->
+    <div class="container content_ticket">
+      <div class="row">
+        <div class="col-12">
+          <div class="ticket">
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <div class="attribution text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Baba Faye</a>.
+  </div>
+
+  <script src="assets/style/script/conference.js"></script>
+</body>
+</html>
